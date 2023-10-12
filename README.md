@@ -4,12 +4,17 @@ Guide:
 https://guide.mlh.io/organizer-resources/software-for-hackathons
 
 Frontend:
-https://github.com/vishrut-goel/hack-omscs 
-* needs to be added to org
+* https://github.com/vishrut-goel/hack-omscs 
+  * needs to be added to org
 
+---
 
 Backend: 
+* Spring MVC
 
+---
+
+TODO
 High priority:
 * User management - handled by myMLH API
 * Project submission
