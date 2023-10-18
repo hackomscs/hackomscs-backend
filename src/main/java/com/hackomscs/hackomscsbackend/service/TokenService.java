@@ -25,11 +25,13 @@ public class TokenService {
 
     // step 3 in https://my.mlh.io/docs#oauth_flows
     public String getAccessToken(String authCode) {
-        final String MYMLH_TOKEN_URL = "https://my.mlh.io/oauth/token";
-
-        String url = MYMLH_TOKEN_URL + "?client_id=" + clientId + "&client_secret=" + clientSecret + "&code=" + authCode + "&grant_type=authorization_code&redirect_uri=" + redirectUri;
-
-        return restTemplate.postForObject(url, null, String.class);
-
+        return restTemplate.postForObject(
+            String.format(
+                "https://my.mlh.io/oauth/token?client_id=%s&client_secret=%s&code=%s&grant_type=authorization_code&redirect_uri=%s", 
+                clientId, clientSecret, authCode, redirectUri
+            ),
+            null,
+            String.class
+        );
     }
 }
