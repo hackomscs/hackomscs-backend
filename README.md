@@ -1,5 +1,11 @@
 # hackomscs-backend
 
+## Run
+
+     $ ./gradlew build
+     $ ./gradlew bootRun
+
+
 Guide: 
 https://guide.mlh.io/organizer-resources/software-for-hackathons
 
