@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 @RestController
 public class BaseController {
 
-    @Autowired
     private TokenService tokenService;
 
     @GetMapping("/getSessionToken")
